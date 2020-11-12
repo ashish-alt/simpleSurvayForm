@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="srv.css">
+</head>
+<header>
+    <h1 id="title" class="center-text">
+        LTBP Software Solutions Student FeedBack Form
+    </h1>
+    <p id="description" class="center-text">Thank you for taking the time to help us improve the platform</p>
+</header>
+
+<body>
+    <div class="container">
+    <form id="survey-form">
+        <div class="grp-form">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="sts" placeholder="Enter Your Name" required>
+        </div>
+        <div class="grp-form">
+            <label id="enrolment-label" for="enrollmentID">EnrollmentID</label>
+            <input type="text" name="enrollmentID" id="enrollmentID" class="sts" placeholder="Enter Your ID" required>
+        </div>
+        
+        <div class="grp-form">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="sts" placeholder="Enter Your Email" required>
+        </div>
+        <div class="grp-form">
+            <label id="number-label" for="number">Age</label>
+            <input type="number" name="number" id="number" class="sts" placeholder="Enter Your Age" min="17" max="30">
+        </div>
+        <div class="grp-form">
+            <p>Select a course in which you Enrolled</p>
+            <select id="dropdown" name="course" class="sts" required>
+                <option disabled selected value="course">Select a course</option>
+                <option value="c-programming">C-Programming</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="data-structure">Data Structure</option>
+                <option value="web">Web Development</option>
+                <option value="machne-learning">Machine Learning</option>
+                <option value="big-data">Big Data</option>
+                <option value="data-science">Data Science</option>
+                <option value="AI">AI</option>
+                <option value="IOT">IOT</option>
+                <option value="android">Android</option>
+            </select>
+        </div>
+        <div class="grp-form">
+            <p>Would you recommend any course to a friend?</p>
+            <label>
+                <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+                    checked />Definitely</label>
+            <label>
+                <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+
+            <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+        </div>
+        <div class="grp-form">
+            <p>In which field do you want to see Improvement? <span class="gfg">(Multiple Select)</span> </p>
+            <label> <input type="checkbox" name="best" class="input-checkbox" value="video"> Video Content</label>
+            <label> <input type="checkbox" name="best" class="input-checkbox" value="liv">Live Lectures </label>
+            <label> <input type="checkbox" name="best" class="input-checkbox" value="assignment">Assignment </label>
+            <label> <input type="checkbox" name="best" class="input-checkbox" value="more">More Practice Sets </label>
+            <label> <input type="checkbox" name="best" class="input-checkbox" value="project">Projects </label>
+            <label> <input type="checkbox" name="best" class="input-checkbox" value="dsa">DSA Course </label>
+            <label> <input type="checkbox" name="best" class="input-checkbox" value="web-projects">Web Development
+                Projects </label>
+            <label> <input type="checkbox" name="best" class="input-checkbox" value="ml-projects">Machine Learning
+                Projects </label>
+            <label> <input type="checkbox" name="best" class="input-checkbox" value="help">Help Desk </label>
+            <label> <input type="checkbox" name="best" class="input-checkbox" value="forum">Disscussion Foroum </label>
+            <label> <input type="checkbox" name="best" class="input-checkbox" value="doubt">Doubt Solving </label>
+
+        </div>
+        <div class="grp-form">
+            <p>Any Suggestions?</p>
+            <textarea id="comments" class="input-textarea" name="comment"
+                placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="grp-form">
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+              </button>
+        </div>
+
+
+    </form>
+</div>
+</body>
+
+</html>
